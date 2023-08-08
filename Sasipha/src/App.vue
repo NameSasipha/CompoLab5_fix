@@ -9,11 +9,11 @@ const sizes = ref<number>(2)
 </script>
 
 <template>
-  <header class="max-h-screen leading-normal">
-    <div class="flashMessage" v-if="message">
-    <h4 > {{ message }}</h4></div>
-    <div class="m-center">
-      <nav class="space-x">
+  <header class="max-h-screen leading-normal text-center ">
+    <div class=" bg-yellow-600 transition duration-3000  "	 v-if="message">
+    <h4> {{ message }}</h4></div>
+    <div class="m-center	">
+      <nav class="w-full space-x-2 text-center ">
         <RouterLink :to="{name: 'event-list'}">Home</RouterLink>
         <RouterLink :to="{name: 'category'}">Category</RouterLink>
         <RouterLink :to="{name: 'student'}">Student</RouterLink>
@@ -25,11 +25,15 @@ const sizes = ref<number>(2)
       </div> -->
     </div>
   </header>
-  <h1 class=" ">Events for Good</h1>
-  <RouterView :size="sizes"/>
+  <h1></h1>
+  
+  <h1 class="text-lime-200 mt-2 text-center" >Events for Good</h1>
+
+
+  <RouterView class="text-center mt-5 " :size="sizes"/>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 /* header {
   line-height: 1.5;
   max-height: 100vh;
@@ -105,4 +109,4 @@ nav a:first-of-type {
     animation: yellowfade 3s ease-in-out;
   }
 
-</style>
+</style> -->

@@ -13,15 +13,16 @@ const events: Ref<Array<StudentItem>> = ref([])
 </script>
 
 <template>
-  <main class="events">
+  <main  class="text-lime-200 text-center items-center  ">
     <EventCard v-for="event in events" :key="event.id" :event="event"></EventCard>
   </main>
 </template>
 
 <style scoped>
-.events{
+/* .events{
   display: flex;
   flex-direction: column;
   align-items: center;
-}</style>
+} */
+</style>
 <!-- <style scoped></style> -->

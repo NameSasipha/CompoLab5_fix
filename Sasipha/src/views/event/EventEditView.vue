@@ -58,7 +58,7 @@ function edit(){
 
     </div> -->
     <template>
-    <p>Edit the event here</p>
-    <button @click="edit">Edit Me</button>
+    <p class="text-neutral-600">Edit the event here</p>
+    <button class="text-neutral-400" @click="edit">Edit Me</button>
     <!-- </div> -->
 </template>

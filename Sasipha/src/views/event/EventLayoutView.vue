@@ -42,6 +42,6 @@
         <router-link :to="{name: 'event-edit' , params: {id}}" > Edit </router-link> 
 
     </div>
-    <RouterView :event="event"></RouterView>
+    <RouterView class="text-center mt-5 text-neutral-500" :event="event"></RouterView>
     </div>
 </template>

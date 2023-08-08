@@ -1,6 +1,6 @@
 <template>
 
-    <div class="event-card">
+    <div class=" text-lime-200 mt-5 pt-3 text-center border-2 border-green-50 w-42 h-20 	">
       <span> {{ event?.category }} </span>
       <h4>{{ event?.organizer }}</h4>
     </div>
@@ -20,7 +20,7 @@ const props = defineProps({
 </script>
 
 <style scoped>
-.event-card {
+/* .event-card {
   padding: 20px;
   width: 250px;
   cursor: pointer;
@@ -31,5 +31,5 @@ const props = defineProps({
 .event-card:hover {
   transform: scale(1.01);
   box-shadow: 0 3px 12 px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 </style>

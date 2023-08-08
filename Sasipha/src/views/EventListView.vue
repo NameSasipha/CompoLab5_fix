@@ -1,13 +1,14 @@
 
 <template>
-  <main class="flex flex-col items-center">
-    <EventCard v-for="event in events" :key="event.id" :event="event"></EventCard>
+  <main >
+    <EventCard  v-for="event in events" :key="event.id" :event="event"></EventCard>
       <div class="pagination">
-      <RouterLink :to="{name: 'event-list', query: {page: page - 1}}" rel="prev" v-if="page != 1" id="page-prev">
+
+      <RouterLink class="text-gray-50 mt-6"  :to="{name: 'event-list', query: {page: page - 1}}" rel="prev" v-if="page != 1" id="page-prev">
         Prev Page
       </RouterLink>
 
-      <RouterLink :to="{name: 'event-list', query: {page: page + 1}}" rel="next" v-if="hasNextPage" id="page-next">
+      <RouterLink class="text-gray-50 mt-6" :to="{name: 'event-list', query: {page: page + 1}}" rel="next" v-if="hasNextPage" id="page-next">
         Next Page
       </RouterLink>
     </div>

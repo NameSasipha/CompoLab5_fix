@@ -58,7 +58,7 @@ function register(){
 
     </div> -->
     <template>
-    <p>Register from  here</p>
-    <button @click="register" > Register Me </button>
+    <p class="text-neutral-600">Register from  here</p>
+    <button class="text-neutral-400" @click="register"  > Register Me </button>
     <!-- </div> -->
 </template>
