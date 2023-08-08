@@ -4,12 +4,12 @@
     <EventCard  v-for="event in events" :key="event.id" :event="event"></EventCard>
       <div class="pagination">
 
-      <RouterLink class="text-gray-50 mt-6"  :to="{name: 'event-list', query: {page: page - 1}}" rel="prev" v-if="page != 1" id="page-prev">
-        Prev Page
+      <RouterLink class="mt-6"  :to="{name: 'event-list', query: {page: page - 1}}" rel="prev" v-if="page != 1" id="page-prev">
+      <div class="text-gray-50">Prev Page</div>  
       </RouterLink>
 
-      <RouterLink class="text-gray-50 mt-6" :to="{name: 'event-list', query: {page: page + 1}}" rel="next" v-if="hasNextPage" id="page-next">
-        Next Page
+      <RouterLink class=" mt-6" :to="{name: 'event-list', query: {page: page + 1}}" rel="next" v-if="hasNextPage" id="page-next">
+        <div class="text-gray-50 ">Next Page</div>
       </RouterLink>
     </div>
   </main>
