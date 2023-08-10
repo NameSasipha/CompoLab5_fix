@@ -4,22 +4,22 @@ import { RouterLink, RouterView } from 'vue-router'
 import { useMessageStore } from './stores/message';
 import { storeToRefs } from 'pinia';
 const store = useMessageStore()
-const {message} = storeToRefs(store)
-import {ref} from 'vue'
+const { message } = storeToRefs(store)
+import { ref } from 'vue'
 const sizes = ref<number>(2)
 </script>
 
 <template>
   <header class="max-h-screen leading-normal text-center ">
-    <div class=" bg-yellow-600 transition duration-3000  "	 v-if="message">
+    <div class=" bg-yellow-600 transition duration-3000  " v-if="message">
+      <h4> {{ message }}</h4>
+    </div>
+    <div class="m-center">
       <h1>SASIPHA THONKHAN</h1>
-    <h4> {{ message }}</h4></div>
-    <div class="m-center	">
       <nav class="w-full space-x-2 text-center ">
-        <RouterLink :to="{name: 'event-list'}">Home</RouterLink>
-        <RouterLink :to="{name: 'category'}">Category</RouterLink>
-        <RouterLink :to="{name: 'student'}">Student</RouterLink>
-
+        <RouterLink :to="{ name: 'event-list' }">Home</RouterLink>
+        <RouterLink :to="{ name: 'category' }">Category</RouterLink>
+        <RouterLink :to="{ name: 'student' }">Student</RouterLink>
       </nav>
       <!-- <div class="size">
         <label>  Size : </label>
@@ -28,11 +28,11 @@ const sizes = ref<number>(2)
     </div>
   </header>
   <h1></h1>
-  
-  <h1 class="text-lime-200 mt-2 text-center" >Events for Good</h1>
+
+  <h1 class="text-lime-200 mt-2 text-center">Events for Good</h1>
 
 
-  <RouterView class="text-center mt-5 " :size="sizes"/>
+  <RouterView class="text-center mt-5 " :size="sizes" />
 </template>
 
 <!-- <style scoped>
