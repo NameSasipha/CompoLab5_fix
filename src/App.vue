@@ -1,3 +1,4 @@
+
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import { useMessageStore } from './stores/message';
@@ -11,6 +12,7 @@ const sizes = ref<number>(2)
 <template>
   <header class="max-h-screen leading-normal text-center ">
     <div class=" bg-yellow-600 transition duration-3000  "	 v-if="message">
+      <h1>SASIPHA THONKHAN</h1>
     <h4> {{ message }}</h4></div>
     <div class="m-center	">
       <nav class="w-full space-x-2 text-center ">
